@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0A4D1C; /* Cor de fundo verde */
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+    background-color: yellow;
+    padding: 30px;
+    border-radius: 36px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.login-container h1 {
+    color: #000;
+    text-align: center;
+    text-shadow: 8px 12px 5.9px rgba(0, 0, 0, 0.25);
+    font-family: "Nova Round";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.login-container button {
+    padding: 10px;
+    border: none;
+    background-color: #E0F; /* Cor de fundo rosa */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 28px;
+    width: 100%;
+    max-width: 181px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.login-container button:hover {
+    background-color: #D0E; /* Cor de fundo rosa escura */
+}
+
+.login-container a {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para telas maiores que 600px */
+@media (min-width: 600px) {
+    .button-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .login-container button {
+        width: 181px;
+        height: 181px;
+    }
+}
